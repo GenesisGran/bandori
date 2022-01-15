@@ -48,6 +48,9 @@ footer {
   display: flex;
   background-color: orangered;
 }
+footer.home {
+  margin-top: 0;
+}
 footer h4 {
   display: table;
   background-color: blue;
@@ -102,6 +105,9 @@ footer a {
 }
 .morfonica {
   background-color: #33aaff;
+}
+.container.morfonica {
+  background-color: #83cbff;
 }
 .ras {
   background-color: #8250d2;
