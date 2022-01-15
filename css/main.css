@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+
+.container {
+  overflow-x: hidden;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: red;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+header h1 img {
+  width: 20%;
+  min-width: 200px;
+}
+
+h2 {
+  background-color: orange;
+  border-radius: 50px;
+  padding: 0.5em;
+  width: fit-content;
+  margin: 1em auto;
+}
+
+footer {
+  border-top: 5px solid black;
+  margin-top: 1em;
+  display: flex;
+  background-color: orangered;
+}
+footer h4 {
+  display: table;
+  background-color: blue;
+  color: white;
+  font-size: 1.25em;
+  margin: 1em auto;
+  padding: 0.8em;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+footer img {
+  transition: width 150ms ease-out;
+}
+footer a {
+  margin: 0.5em;
+}
+.socialMedia img {
+  width: 15%;
+  min-width: 50px;
+}
+.socialMedia img:hover {
+  width: 17.5%;
+}
+.games {
+  margin-top: 1em;
+}
+.games img {
+  width: 25%;
+  min-width: 100px;
+}
+.games img:hover {
+  width: 27.5%;
+}
+.divider {
+  margin: 1em 0;
+}
+
+.popipa {
+  background-color: #ff3377;
+}
+.afterglow {
+  background-color: #e53344;
+}
+.pasupare {
+  background-color: #33ddaa;
+}
+.roselia {
+  background-color: #3344aa;
+}
+.hhw {
+  background-color: #ffdd00;
+}
+.morfonica {
+  background-color: #33aaff;
+}
+.ras {
+  background-color: #8250d2;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-wrap: wrap;
+  }
+}

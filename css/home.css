@@ -1,0 +1,181 @@
+.nav {
+  background-color: orange;
+  right: 0%;
+  top: 10%;
+  position: fixed;
+  z-index: 1;
+  width: 10%;
+  min-width: 120px;
+
+  text-align: center;
+  border: solid 4px black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+p {
+  margin: 0;
+}
+.nav:hover nav {
+  display: block;
+  position: relative;
+}
+nav {
+  display: none;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  border-top: solid 4px black;
+  padding: 0.5em;
+}
+nav img {
+  width: 100%;
+}
+
+.character {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.character a > img {
+  height: 80vh;
+  display: block;
+  transition: height 150ms ease-out;
+}
+.character a {
+  display: inline-block;
+  margin: 0 -2em;
+  padding-top: 1em;
+  text-decoration: none;
+}
+.character p {
+  margin: 0 auto;
+  padding: 0.25em;
+  transform: translate(0, -100px);
+  background-color: yellow;
+  border: solid 4px black;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.character a:hover {
+  font-weight: bold;
+}
+.character a:hover img {
+  height: 85vh;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 1em;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+header + h3 {
+  background-color: #ff3377;
+}
+.popipa + h3 {
+  background-color: #e53344;
+}
+.afterglow + h3 {
+  background-color: #33ddaa;
+}
+.pasupare + h3 {
+  background-color: #3344aa;
+}
+.roselia + h3 {
+  background-color: #ffdd00;
+}
+.hhw + h3 {
+  background-color: #83cbff;
+}
+.morfonica + h3 {
+  background-color: #8250d2;
+}
+
+.afterglow a {
+  transform: translate(-30px, 0);
+}
+.afterglow .left {
+  transform: translate(30px, 0);
+}
+.afterglow .right {
+  transform: translate(-120px, 0);
+}
+.afterglow .center p {
+  transform: translate(-40px, -100px);
+}
+
+.pasupare a {
+  transform: translate(20px, 0);
+}
+
+.hhw a {
+  margin: 0 -7em;
+}
+#michelle {
+  transform: translate(60px, 0);
+  position: relative;
+  z-index: 0;
+}
+#hagumi {
+  position: relative;
+  z-index: 1;
+}
+
+.ras a {
+  transform: translate(30px, 0);
+}
+.ras .center {
+  transform: translate(80px, 0);
+}
+
+@media only screen and (max-width: 1600px) {
+  .hhw a {
+    margin: 0 -4.8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h3 img {
+    width: 100%;
+  }
+  .character {
+    flex-direction: column;
+  }
+  .character a > img {
+    height: 60vh;
+  }
+  .afterglow a {
+    transform: translate(0, 0);
+    width: 100%;
+  }
+  .afterglow .left {
+    transform: translate(0, 0);
+  }
+  .afterglow .right {
+    transform: translate(0, 0);
+  }
+  .afterglow .center p {
+    transform: translate(0, -100px);
+  }
+  .pasupare a {
+    transform: translate(0, 0);
+  }
+  #michelle {
+    transform: translate(0, 0);
+  }
+  .ras a {
+    transform: translate(0, 0);
+  }
+  .ras .center {
+    transform: translate(0, 0);
+  }
+}
