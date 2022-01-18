@@ -179,3 +179,9 @@ header + h3 {
     transform: translate(0, 0);
   }
 }
+
+@media only screen and (max-height: 600px) {
+  .character a {
+    margin: 0;
+  }
+}
